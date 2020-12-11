@@ -1,9 +1,17 @@
 h1{
-    color: blue;
+    color: rgb(235, 235, 241);
+    text-align: center;
+    font-weight: bold;
 }
 
-/* *{margin:0;padding:0;box-sizing:border-box;font-size:0;} */
-            
+
+header {
+	width:100%; /* Establecemos que el header abarque el 100% del documento */
+	overflow:hidden; /* Eliminamos errores de float */
+	background:#252932;
+	margin-bottom:20px;
+}
+    
 .menu a{
     text-decoration:none;
     color:inherit;
