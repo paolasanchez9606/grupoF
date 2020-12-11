@@ -30,3 +30,11 @@ header {
     background-color:#fff;
     color:#000;
     }
+footer {
+        text-align: center;
+        color: cornsilk;
+        width:100%; /* Establecemos que el header abarque el 100% del documento */
+        overflow:hidden; /* Eliminamos errores de float */
+        background:#252932;
+        margin-bottom:20px;
+    }
