@@ -1,4 +1,24 @@
-H1 {color:#CC9900;}
-body {color:black} 
-p {font-family:"sans serif"}
-p {text-align:center;color:red} 
+h1{
+    color: blue;
+}
+
+/* *{margin:0;padding:0;box-sizing:border-box;font-size:0;} */
+            
+.menu a{
+    text-decoration:none;
+    color:inherit;
+    font-size:14px;
+    } 
+.menu li{
+    display:inline-block;
+    width:10%;
+    padding:5px 10px;
+    background-color:#000;
+    border:1px solid #000;
+    text-align:center;
+    color:#fff;
+    }
+.menu li:hover{
+    background-color:#fff;
+    color:#000;
+    }
