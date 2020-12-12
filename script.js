@@ -70,6 +70,17 @@ function validar_formulario(cual) {
             return false;
         }
     }
+    //si cual = 4 es para validar eliminar imagen
+    if (cual == 4) {
+        var nombre = document.getElementById("nombre").value;
+        if (nombre == "") {
+            alert("Debe digitar el nombre de la imagen.");
+            document.getElementById("nombre").focus();
+            return false;
+        }
+    }
+
+
     return true;
 }
 

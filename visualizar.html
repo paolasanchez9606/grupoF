@@ -2,29 +2,26 @@
 <html lang="es">
 
 <head>
-      <title>Crear/Actualizar imagen</title>
+      <title>Crear/Visualizar imagen</title>
       <link rel="stylesheet" href="style.css">
       <script src="script.js"></script>
       <meta charset="utf-8">
 </head>
 
 <body id="cielo">
-      <h1 class="login">Crear/Actualizar de imágenes</h1>
+      <h1 class="login">Visualizador de imágenes</h1>
       <br>
 
-      <form action="" method="post" id="formulario" onsubmit="return validar_formulario(3);">
+      <form action="" method="post" id="formulario" >
             <img src="vista_previa.png" class="logos" id="preview">
             <br>
-            <input type="file" name="archivo" value="Selecciona la imagen" required id="file">
+            <p>Nombre de la imagen</p>
             <br>
-            <input type="text" name="nombre" placeholder="Nombre de la imagen" id="nombre">
+            <p>Descripción de la imagen</p>
             <br>
-            <input type="text" name="descripcion" placeholder="Descripción de la imagen" id="descripcion">
-            <br>
-            <input type="radio" id="male" name="gender" style="width: auto;">
-            <label for="male">Esta imagen es pública</label>
-            <br>
-            <input type="submit" name="cargar" class="btn" value="Cargar/Actualizar">
+            <input type="submit" name="cargar" class="btn" value="Actualizar" onsubmit="">
+            <input type="submit" name="cargar" class="btn" value="Eliminar">
+            <input type="submit" name="cargar" class="btn" value="Descargar">
             <br>
             <div style="margin: 10px; font-size: large;">
                   <label>¿Se arrepintió y desea volver al inicio? </label><a href="index.html">Click aquí</a>
