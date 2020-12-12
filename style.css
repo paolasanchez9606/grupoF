@@ -1,32 +1,48 @@
+body{
+    font-family: Verdana;
+}
+
 h1.clarito{
     color: rgb(235, 235, 241);
     text-align: center;
     font-weight: bold;
 }
 
+h1.login{
+    text-align: center;
+    
+}
+
+form{
+    padding: 10px;
+    border-color: transparent;
+}
 
 header {
 	width:100%; /* Establecemos que el header abarque el 100% del documento */
 	overflow:hidden; /* Eliminamos errores de float */
-	background:#252932;
+    background: linear-gradient(45deg,rgb(54, 78, 97), rgb(116, 23, 23)); 
 	margin-bottom:20px;
 }
     
 #formulario{
     margin: 0 auto;
     text-align: center;
-    border-radius: 10px;
-    border: 1px solid #666666;
+    
+    
     width: 500px;
+    background-color: transparent;
 }
 
 input{
     margin: 5px;
     font-size: large;
+    border: 2px solid powderblue;
+    padding: 10px;
 }
 
 input.btn{
-    background-color: #4671a1;
+    background-color: rgb(29, 149, 165);
     color: #fff;
     padding: 10px;
     border-radius: 10px;
@@ -58,5 +74,13 @@ footer {
         width:100%; /* Establecemos que el header abarque el 100% del documento */
         overflow:hidden; /* Eliminamos errores de float */
         background:#252932;
-        margin-bottom:20px;
+        margin-bottom:0px;
+        position: fixed;
+        bottom: 0;
+        font-size: small;
     }
+
+#cielo{
+    background-image: url(cielo.jpg);
+    background-size: cover;
+}
