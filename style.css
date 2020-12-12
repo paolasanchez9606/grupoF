@@ -45,7 +45,9 @@ input{
     font-size: large;
     border: 2px solid powderblue;
     padding: 10px;
+    width: 100%;
 }
+
 
 input.btn{
     background-color: rgb(29, 149, 165);
@@ -53,6 +55,7 @@ input.btn{
     padding: 10px;
     border-radius: 10px;
     border: 1px solid #ffffff;
+    
 
 }
 

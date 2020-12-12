@@ -2,30 +2,29 @@
 <html lang="es">
 
 <head>
-      <title>Registrar Usuario</title>
+      <title>Crear/Actualizar imagen</title>
       <link rel="stylesheet" href="style.css">
       <meta charset="utf-8">
 </head>
 
 <body id="cielo">
-      <h1 class="login">REGISTRO DE USUARIO</h1>
+      <h1 class="login">Crear/Actualizar de imágenes</h1>
       <br>
 
       <form action="inicio.php" method="post" id="formulario">
-            <img src="registro.png" class="logos">
+            <img src="vista_previa.png" class="logos">
             <br>
-            <input type="text" name="user" placeholder="Username" >
+            <input type="file" name="archivo" value="Selecciona la imagen" >
             <br>
-            <input type="email" name="correo" placeholder="Email" >
+            <input type="text" name="nombre" placeholder="Nombre de la imagen">
             <br>
-            <input type="password" name="clave" placeholder="Password" >
+            <input type="radio" id="male" name="gender" style="width: auto;">
+            <label for="male">Esta imagen es pública</label>
             <br>
-            <input type="password" name="repitaclave" placeholder="Repeat Password" >
-            <br>
-            <input type="submit" name="Registrar" class="btn" value="Registrar">
+            <input type="submit" name="cargar" class="btn" value="Cargar/Actualizar">
             <br>
             <div style="margin: 10px; font-size: large;">
-                  <label>¿Se acordó que sí tenía usuario? </label><a href="">Click aquí</a>
+                  <label>¿Se arrepintió y desea volver al inicio? </label><a href="">Click aquí</a>
             </div>
             
       </form>
