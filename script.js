@@ -46,12 +46,27 @@ function validar_formulario(cual) {
         }
         if (repetirclave == "") {
             alert("No debe haber campos vacíos.");
-            document.getElementById("clave").focus();
+            document.getElementById("repetirclave").focus();
             return false;
         }
         if (clave != repetirclave) {
             alert("No coinciden las claves.");
-            document.getElementById("clave").focus();
+            document.getElementById("repetirclave").focus();
+            return false;
+        }
+    }
+    //si cual = 3 es para validar crear/actualizar imagen
+    if (cual == 3) {
+        var nombre = document.getElementById("nombre").value;
+        var descripcion = document.getElementById("descripcion").value;
+        if (nombre == "") {
+            alert("Debe digitar el nombre de la imagen.");
+            document.getElementById("nombre").focus();
+            return false;
+        }
+        if (descripcion == "") {
+            alert("La imagen debe tener una descripción.");
+            document.getElementById("descripcion").focus();
             return false;
         }
     }
@@ -70,3 +85,8 @@ function mostrarPassword() {
 function ocultarPassword() {
     document.getElementById("clave").type = "password";
 }
+
+
+
+
+

@@ -12,12 +12,15 @@
       <h1 class="login">Crear/Actualizar de imágenes</h1>
       <br>
 
-      <form action="inicio.php" method="post" id="formulario">
-            <img src="vista_previa.png" class="logos">
+      <form action="" method="post" id="formulario" onsubmit="return validar_formulario(3);">
+            <img src="vista_previa.png" class="logos" id="preview">
             <br>
-            <input type="file" name="archivo" value="Selecciona la imagen" >
+            <input type="file" name="archivo" value="Selecciona la imagen" required id="file"
+                  onload="return previsualizar();">
             <br>
-            <input type="text" name="nombre" placeholder="Nombre de la imagen">
+            <input type="text" name="nombre" placeholder="Nombre de la imagen" id="nombre">
+            <br>
+            <input type="text" name="descripcion" placeholder="Descripción de la imagen" id="descripcion">
             <br>
             <input type="radio" id="male" name="gender" style="width: auto;">
             <label for="male">Esta imagen es pública</label>
@@ -27,18 +30,30 @@
             <div style="margin: 10px; font-size: large;">
                   <label>¿Se arrepintió y desea volver al inicio? </label><a href="">Click aquí</a>
             </div>
-            
+
       </form>
 
-
+      <script>
+            document.getElementById("file").onchange = function (e) {
+                  // Creamos el objeto de la clase FileReader
+                  let reader = new FileReader();
+                  // Leemos el archivo subido y se lo pasamos a nuestro fileReader
+                  reader.readAsDataURL(e.target.files[0]);
+                  // Le decimos que cuando este listo ejecute el código interno
+                  reader.onload = function () {
+                        let preview = document.getElementById('preview');
+                        preview.src = reader.result;
+                  };
+            }
+      </script>
 
 
 
       <footer>
-		<h4>PROYECTO MINTIC- UNINORTE - Grupo F</h4>
-		<h4>GERMÁN ALBERTO SÁNCHEZ, VÍCTOR MANUEL ESCOBAR, NANCY PAOLA SÁNCHEZ, DAVID ESTEBAN ARIAS PARRA</h4>
-		<p>Copyright 2020 todos los derechos reservados.</p>
-	</footer>
+            <h4>PROYECTO MINTIC- UNINORTE - Grupo F</h4>
+            <h4>GERMÁN ALBERTO SÁNCHEZ, VÍCTOR MANUEL ESCOBAR, NANCY PAOLA SÁNCHEZ, DAVID ESTEBAN ARIAS PARRA</h4>
+            <p>Copyright 2020 todos los derechos reservados.</p>
+      </footer>
 </body>
 
 </html>

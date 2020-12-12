@@ -28,7 +28,7 @@ header {
 	width:100%; /* Establecemos que el header abarque el 100% del documento */
 	overflow:hidden; /* Eliminamos errores de float */
     background: linear-gradient(45deg,rgb(54, 78, 97), rgb(116, 23, 23)); 
-	margin-bottom:20px;
+	margin-bottom:0px;
 }
     
 #formulario{
