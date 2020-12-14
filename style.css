@@ -93,3 +93,27 @@ footer {
     background-image: url(cielo.jpg);
     background-size: cover;
 }
+
+#input_container {
+    position:relative;
+    padding:10 px;
+    margin:5px;
+    background-color: transparent;
+    direction: ltr;
+    width: 100%;
+}
+
+#clave {
+    height:20px;
+    margin:0;
+    padding-right: 30px;
+    width: 96%;
+}
+
+#input_img {
+    position:absolute;
+    bottom:2px;
+    right:5px;
+    width:24px;
+    height:24px;
+}
