@@ -110,6 +110,13 @@ footer {
     width: 96%;
 }
 
+#repetirclave {
+    height:20px;
+    margin:0;
+    padding-right: 30px;
+    width: 96%;
+}
+
 #input_img {
     position:absolute;
     bottom:2px;

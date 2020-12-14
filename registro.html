@@ -19,9 +19,14 @@
             <br>
             <input type="email" name="correo" placeholder="Email" id="correo">
             <br>
+            <div id="input_container">
             <input type="password" name="clave" placeholder="Password" id="clave">
-            <br>
+            <img src="galeria/visible.ico" id="input_img" onmouseover="mostrarContrasena()" onmouseout="ocultarContraseña()">
+            </div>
+            <div id="input_container">
             <input type="password" name="repitaclave" placeholder="Repeat Password" id="repetirclave">
+            <img src="galeria/visible.ico" id="input_img" onmouseover="mostrarPassword()" onmouseout="ocultarPassword()">
+            </div>
             <br>
             <input type="submit" name="Registrar" class="btn" value="Registrar">
             <br>

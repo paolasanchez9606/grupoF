@@ -85,16 +85,12 @@ function validar_formulario(cual) {
 }
 
 
-
-
-
-
 function mostrarPassword() {
-    document.getElementById("clave").type = "text";
+    document.getElementById("repetirclave").type = "text";
 }
 
 function ocultarPassword() {
-    document.getElementById("clave").type = "password";
+    document.getElementById("repetirclave").type = "password";
 }
 
 
@@ -103,9 +99,14 @@ function mostrarContrasena(){
     var tipo = document.getElementById("clave");
     if(tipo.type == "password"){
           tipo.type = "text";
-    }else{
-          tipo.type = "password";
     }
+}
+
+function ocultarContraseña(id){
+    var tipo = document.getElementById("clave");
+    if(tipo.type == "text") {
+        tipo.type = "password";
+  }
 }
 
 
